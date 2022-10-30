@@ -8,9 +8,9 @@ use futures::future::Future;
 use juniper::http::graphiql::graphiql_source;
 use juniper::http::GraphQLRequest;
 
-mod graphql_schema;
-    
-use crate::graphql_schema::{create_schema, Schema};
+#[path = "graphql/user_schema.rs"] mod user_schema;
+
+use crate::user_schema::{create_schema, Schema};
 
 fn graphql(
     st: web::Data<Arc<Schema>>,
