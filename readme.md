@@ -8,6 +8,15 @@ A simple Graphql server built with Rust and Juniper.
 - Diesel
 - Juniper gql
 
+### Setup PostgreSQl
+
+Add *DATABASE_URL* with your settings in .env
+
+```sh
+    diesel setup    
+    diesel migration generate create_users
+```
+
 ### Run
 
 ```sh
@@ -19,3 +28,4 @@ A simple Graphql server built with Rust and Juniper.
 ```sh
  cargo build
 ```
+
