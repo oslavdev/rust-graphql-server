@@ -19,6 +19,8 @@ Add *DATABASE_URL* with your settings in .env
 
 ### Run
 
+The project will run on http://localhost:8080/
+
 ```sh
  cargo run
 ```
